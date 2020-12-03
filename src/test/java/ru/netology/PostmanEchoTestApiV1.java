@@ -20,10 +20,10 @@ public class PostmanEchoTestApiV1 {
         // Проверки
                 .then()
                 .statusCode(200)
-                .body("data.id", equalTo(1))
-                .body("data.name", equalTo("Leanne Graham"))
+                .body("data.id", equalTo(10))
+                .body("data.name", equalTo("Test Test"))
                 .body("data.email", equalTo("sincere@april.biz"))
-                .body("data.photos", hasSize(1))
+                .body("data.photos", hasSize(2))
                 .body("data.photos[0]", equalTo("photo1.jpg"))
         ;
     }
